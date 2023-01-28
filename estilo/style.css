@@ -1,0 +1,685 @@
+@charset "UTF-8";
+
+/*Importando fonte do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+
+/*zerando a margin e padding de todos os componetes e aplicando uma fonte sem serifa utilizando o (*)*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Etilo referente a parte superior da página (header)*/
+header{
+    background-image: -moz-linear-gradient(to right, #e9492a, #e72357);
+    height: 250px;
+    position: relative;
+    display: flex;
+}
+header .texto-cabeca{
+    color: #ffff;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 78%;
+    margin-bottom: 10px;
+    text-align: right;
+    width: 400px;
+    height: 150px;    
+}
+header .texto-cabeca h1{
+    position: absolute;
+    margin-bottom: 15px;
+    font-family: "Overpass";
+}
+header .texto-cabeca .edicao{
+    margin-top: 137px;
+    margin-right: 28%;
+}
+header .logo-mulher{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 131px;
+    width: 180px;
+}
+header .logo-mandatrends{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 60px;
+    width: 250px;
+}
+header .vetor-bola{
+    position: absolute;
+    margin-top: 60px;
+    width: 155px;
+}
+header .vetor-setas{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 70px;
+    width: 60px;
+}
+header .vetor-quadrado{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 220px;
+    width: 45px;
+}
+header .vetor-triangulo{
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 12px;
+    width: 36px;
+}
+header .vetor-zigzag{
+    position: absolute;
+    margin-left: 87%;
+    margin-top: 213px;
+    width: 125px;
+}
+
+/*Estilo referente ao conteúdo do corpo da página (article)*/
+main{
+    width: 100%;
+}
+article{
+    width: 100%;
+}
+article .noticia-destaque{
+    position: relative;
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    z-index: 1000;
+    text-decoration: none;
+}
+article .noticia-destaque .img-destaque{
+    width: 700px;
+    display: block;
+    margin: auto;
+}
+article .noticia-destaque h1{
+    margin-top: 10px;
+    font-size: 1.8em;
+    color: #000000;
+    transition: 0.1s;
+}
+/*Aplicanco a pseudoclasse com (:hover) para quando passar o mause sobre o título (h1) mudar de cor*/
+article .noticia-destaque h1:hover{
+    color: #e72357;
+}
+article p{
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #74787a;
+    text-align: justify;
+}
+article .fonte{
+    font-style: italic;
+    margin-top: 20px;
+}
+article a{
+    text-decoration: none;
+}
+article .barra-noticia{
+    margin-top: 10px;
+    height: 6px;
+    width: 45%;
+    background-image: -moz-linear-gradient(to right, #e62259, #6b5ba3);
+}
+article .sub-noticia{
+    max-width: 700px;
+    min-width: 350px;
+    margin-top: 50px;
+    padding-top: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+article .sub-noticia .noticia1{
+    width: 350px;
+    /*Aplicar no (media querie)*/
+    margin: auto;
+}
+article .sub-noticia .noticia2{
+    width: 350px;
+    /*Aplicar no (media querie)*/
+    margin: auto;
+}
+article .sub-noticia .noticia1 img{
+    width: 328px;
+}
+article .sub-noticia .noticia2 img{
+    width: 340px;
+}
+article .sub-noticia h1{
+    padding-top: 10px;
+    color: #000000;
+    transition: 0.1s;
+}
+article .sub-noticia h1:hover{
+    color: #e72357;
+}
+article .sub-noticia p{
+    margin-top: 10px;
+}
+article .sub-noticia .noticia1 .barra-noticia{
+    width: 55%;
+    background-image: -moz-linear-gradient(to right, #76c6cf, #675ea5);
+}
+article .sub-noticia .noticia2 .barra-noticia{
+    width: 55%;
+    background-image: -moz-linear-gradient(to right, #75c7ce, #3ab38a);
+}
+
+/*Estilo referente a base do site (footer)*/
+footer{
+    margin-top: 40px;
+    width: 100%;
+}
+footer .conteudo-rodape{
+    text-align: center;
+    height: 100px;
+    background-color: #fc4c02;
+}
+footer .conteudo-rodape .logo-rodape{
+    width: 270px;
+    margin-top: 25px;
+}
+
+/*Aplicando a responsividade com (media queries)*/
+@media screen and (max-width: 1500px){
+    header .texto-cabeca{
+        color: #ffff;
+        position: absolute;
+        margin-top: 45px;
+        margin-left: 73%;
+        margin-bottom: 10px;
+        text-align: right;
+        width: 300px;
+        height: 150px;    
+    }
+    header .texto-cabeca h1{
+        position: absolute;
+        margin-bottom: 15px;
+        font-family: "Overpass";
+    }
+    header .texto-cabeca .edicao{
+        margin-top: 137px;
+        margin-right: 5%;
+    }
+    header .logo-mulher{
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 131px;
+        width: 180px;
+    }
+    header .logo-mandatrends{
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 60px;
+        width: 250px;
+    }
+    header .vetor-bola{
+        position: absolute;
+        margin-top: 60px;
+        width: 155px;
+    }
+    header .vetor-setas{
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 70px;
+        width: 60px;
+    }
+    header .vetor-quadrado{
+        position: absolute;
+        margin-left: 40%;
+        margin-top: 220px;
+        width: 45px;
+    }
+    header .vetor-triangulo{
+        position: absolute;
+        margin-left: 95%;
+        margin-top: 12px;
+        width: 36px;
+    }
+    header .vetor-zigzag{
+        position: absolute;
+        margin-left: 86%;
+        margin-top: 213px;
+        width: 125px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    header .texto-cabeca{
+        color: #ffff;
+        position: absolute;
+        margin-top: 45px;
+        margin-left: 65%;
+        margin-bottom: 10px;
+        text-align: right;
+        width: 340px;
+        height: 150px;    
+    }
+    header .texto-cabeca h1{
+        position: absolute;
+        margin-bottom: 15px;
+        font-family: "Overpass";
+    }
+    header .texto-cabeca .edicao{
+        margin-top: 137px;
+        margin-right: 15%;
+    }
+    header .logo-mulher{
+        position: absolute;
+        margin-left: 38%;
+        margin-top: 131px;
+        width: 180px;
+    }
+    header .logo-mandatrends{
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 60px;
+        width: 250px;
+    }
+    header .vetor-bola{
+        position: absolute;
+        margin-top: 60px;
+        width: 155px;
+    }
+    header .vetor-setas{
+        position: absolute;
+        margin-left: 45%;
+        margin-top: 70px;
+        width: 60px;
+    }
+    header .vetor-quadrado{
+        position: absolute;
+        margin-left: 32%;
+        margin-top: 220px;
+        width: 45px;
+    }
+    header .vetor-triangulo{
+        position: absolute;
+        margin-left: 92%;
+        margin-top: 12px;
+        width: 36px;
+    }
+    header .vetor-zigzag{
+        position: absolute;
+        margin-left: 81%;
+        margin-top: 213px;
+        width: 125px;
+    }
+    /*Corpo da página*/
+    article .noticia-destaque{
+        position: relative;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        z-index: 1000;
+        text-decoration: none;
+    }
+    article .noticia-destaque .img-destaque{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    article .noticia-destaque h1{
+        margin-top: 10px;
+        font-size: 1.8em;
+        color: #000000;
+        transition: 0.1s;
+    }
+}
+
+@media screen and (max-width: 926px){
+    header .texto-cabeca{
+        color: #ffff;
+        position: absolute;
+        margin-top: 45px;
+        margin-left: 57%;
+        margin-bottom: 10px;
+        text-align: right;
+        width: 300px;
+        height: 150px;    
+    }
+    header .texto-cabeca h1{
+        position: absolute;
+        margin-bottom: 15px;
+        font-family: "Overpass";
+    }
+    header .texto-cabeca .edicao{
+        margin-top: 137px;
+        margin-right: 4%;
+    }
+    header .logo-mulher{
+        position: absolute;
+        margin-left: 36%;
+        margin-top: 135px;
+        width: 170px;
+    }
+    header .logo-mandatrends{
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 60px;
+        width: 250px;
+    }
+    header .vetor-bola{
+        position: absolute;
+        margin-top: 60px;
+        width: 155px;
+    }
+    header .vetor-setas{
+        position: absolute;
+        margin-left: 45%;
+        margin-top: 70px;
+        width: 60px;
+    }
+    header .vetor-quadrado{
+        position: absolute;
+        margin-left: 28%;
+        margin-top: 220px;
+        width: 45px;
+    }
+    header .vetor-triangulo{
+        position: absolute;
+        margin-left: 92%;
+        margin-top: 12px;
+        width: 36px;
+    }
+    header .vetor-zigzag{
+        position: absolute;
+        margin-left: 81%;
+        margin-top: 213px;
+        width: 125px;
+    }
+    /*Corpo da página*/
+    article .noticia-destaque{
+        position: relative;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        z-index: 1000;
+        text-decoration: none;
+    }
+    article .noticia-destaque .img-destaque{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    article .noticia-destaque h1{
+        margin-top: 10px;
+        font-size: 1.8em;
+        color: #000000;
+        transition: 0.1s;
+    }
+}
+
+@media screen and (max-width: 800px){
+    header .texto-cabeca{
+        color: #ffff;
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 66%;
+        margin-bottom: 10px;
+        text-align: right;
+        width: 250px;
+        height: 150px;    
+    }
+    header .texto-cabeca h1{
+        position: absolute;
+        margin-bottom: 15px;
+        font-family: "Overpass";
+        font-size: 1.5em;
+    }
+    header .texto-cabeca .edicao{
+        margin-top: 110px;
+        margin-right: 15%;
+    }
+    header .logo-mulher{
+        position: absolute;
+        margin-left: 38%;
+        margin-top: 131px;
+        width: 180px;
+    }
+    header .logo-mandatrends{
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 60px;
+        width: 250px;
+    }
+    header .vetor-bola{
+        position: absolute;
+        margin-top: 60px;
+        width: 155px;
+    }
+    header .vetor-setas{
+        position: absolute;
+        margin-left: 45%;
+        margin-top: 70px;
+        width: 60px;
+    }
+    header .vetor-quadrado{
+        position: absolute;
+        margin-left: 32%;
+        margin-top: 220px;
+        width: 45px;
+    }
+    header .vetor-triangulo{
+        position: absolute;
+        margin-left: 92%;
+        margin-top: 12px;
+        width: 36px;
+    }
+    header .vetor-zigzag{
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 213px;
+        width: 125px;
+    }
+    /*Corpo da página*/
+    article .noticia-destaque{
+        position: relative;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        z-index: 1000;
+        text-decoration: none;
+    }
+    article .noticia-destaque .img-destaque{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    article .noticia-destaque h1{
+        margin-top: 10px;
+        font-size: 1.8em;
+        color: #000000;
+        transition: 0.1s;
+    }
+}
+
+@media screen and (max-width: 700px){
+    header .texto-cabeca{
+        color: #ffff;
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 66%;
+        margin-bottom: 10px;
+        text-align: right;
+        width: 250px;
+        height: 150px;    
+    }
+    header .texto-cabeca h1{
+        position: absolute;
+        margin-bottom: 15px;
+        font-family: "Overpass";
+        font-size: 1.5em;
+    }
+    header .texto-cabeca .edicao{
+        margin-top: 110px;
+        margin-right: 15%;
+    }
+    header .logo-mulher{
+        position: absolute;
+        margin-left: 38%;
+        margin-top: 131px;
+        width: 180px;
+    }
+    header .logo-mandatrends{
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 60px;
+        width: 250px;
+    }
+    header .vetor-bola{
+        position: absolute;
+        margin-top: 60px;
+        width: 155px;
+    }
+    header .vetor-setas{
+        position: absolute;
+        margin-left: 45%;
+        margin-top: 70px;
+        width: 60px;
+    }
+    header .vetor-quadrado{
+        position: absolute;
+        margin-left: 32%;
+        margin-top: 220px;
+        width: 45px;
+    }
+    header .vetor-triangulo{
+        position: absolute;
+        margin-left: 92%;
+        margin-top: 12px;
+        width: 36px;
+    }
+    header .vetor-zigzag{
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 213px;
+        width: 125px;
+    }
+    /*Corpo da página*/
+    article .noticia-destaque{
+        position: relative;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        z-index: 1000;
+        text-decoration: none;
+    }
+    article .noticia-destaque .img-destaque{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    article .noticia-destaque h1{
+        margin-top: 10px;
+        font-size: 1.8em;
+        color: #000000;
+        transition: 0.1s;
+    }
+    article .sub-noticia .noticia2{
+        width: 350px;
+        /*Aplicar no (media querie)*/
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    header .texto-cabeca{
+        color: #ffff;
+        position: absolute;
+        margin-top: 115px;
+        margin-left: 48%;
+        margin-bottom: 10px;
+        text-align: right;
+        width: 190px;
+        height: 150px;    
+    }
+    header .texto-cabeca h1{
+        position: absolute;
+        margin-bottom: 15px;
+        font-family: "Overpass";
+        font-size: 1.2em;
+    }
+    header .texto-cabeca .edicao{
+        margin-top: 85px;
+        margin-right: 9%;
+    }
+    header .logo-mulher{
+        position: absolute;
+        margin-left: 1%;
+        margin-top: 135px;
+        width: 170px;
+    }
+    header .logo-mandatrends{
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 25px;
+        width: 170px;
+    }
+    header .vetor-bola{
+        position: absolute;
+        margin-top: 0px;
+        width: 155px;
+    }
+    header .vetor-setas{
+        position: absolute;
+        margin-left: 55%;
+        margin-top: 60px;
+        width: 60px;
+    }
+    header .vetor-quadrado{
+        position: absolute;
+        margin-left: 32%;
+        margin-top: 220px;
+        width: 45px;
+        display: none;
+    }
+    header .vetor-triangulo{
+        position: absolute;
+        margin-left: 88%;
+        margin-top: 6px;
+        width: 36px;
+    }
+    header .vetor-zigzag{
+        position: absolute;
+        margin-left: 60%;
+        margin-top: 225px;
+        width: 125px;
+    }
+    /*Corpo da página*/
+    article .noticia-destaque{
+        position: relative;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        z-index: 1000;
+        text-decoration: none;
+    }
+    article .noticia-destaque .img-destaque{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    article .noticia-destaque h1{
+        margin-top: 10px;
+        font-size: 1.8em;
+        color: #000000;
+        transition: 0.1s;
+        font-size: 1.5em;
+    }
+    article .barra-noticia{
+        margin-top: 10px;
+        height: 6px;
+        width: 55%;
+        background-image: -moz-linear-gradient(to right, #e62259, #6b5ba3);
+    }
+}
